@@ -1,0 +1,43 @@
+.btn {
+    background: #F3723F;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 16px 50px 16px 42px;
+}
+
+
+.btn img {
+    height: 12.5px;
+    width: 15.5px;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background: #118CC0;
+    color: white ;
+}
+
+.login-btn {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 14px 30px 14px 30px;
+    margin-right: 30px;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    background-color: white;
+  }
+
+
+  @media (min-width: 769px) and (max-width: 995px) {
+    .login-btn, .get-started-btn{
+        padding: 10px 15px 10px 15px;
+    }
+
+    .login-btn{
+        margin-right: 15px;
+    }
+  }

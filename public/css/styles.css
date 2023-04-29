@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Sansita:wght@400;700;800;900&display=swap");
+
+
+body {
+  background: #ffffff;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
+.mobile-view-only {
+  display: block;
+}
+
+section {
+  padding: 5vw 10vw;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h2 {
+  font-family: DM Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+p {
+  color: #383a47;
+  line-height: 1.5;
+}
+
+.page {
+  padding-top: 13%;
+  padding-bottom: 1%;
+}
+
+@media (max-width: 1036px) {
+  section {
+    padding: 2vw 7vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .page {
+    padding-top: 16%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 7vw;
+  }
+}
+
+@media (max-width: 793px) {
+  .page {
+    padding-top: 20%;
+  }
+
+  section {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-view-only {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .desktop-view-only {
+    display: none;
+  }
+}
+
+@media (max-width: 631px) {
+  section {
+    padding: 10vw 5vw;
+  }
+
+  .page {
+    padding-top: 30%;
+  }
+}

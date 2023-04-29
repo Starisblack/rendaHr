@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;800;900;1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color-scheme: light;
+  }
+
+  img{
+    max-width: none;
+    width: 100%;
+    display: inline;
+  }
+
+  h2 {
+    font-family: DM Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -1px;
+    text-align: left;
+  }
+
+  a{
+    cursor: pointer;
+  }
+
+  .hero-bg {
+    background-image: linear-gradient(93.08deg, #FFFFFF 5.3%, #FFF2ED 36.63%, #FFFFFF 72.36%, rgba(225, 235, 242, 0) 98.15%);
+  }
+
+  .join-bg {
+    background-image: linear-gradient(to right, #F3723F 0%, #EDA58E 60.42%, #87CBFA 100%);
+  }
+
+  .auth-bg {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.0324) 3.24%, #FAE9E2 35.89%, #FEF6F3 73.12%, rgba(229, 245, 255, 0) 100%);
+    ;
+  }
+
+  /*hide table scroll bar*/
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/*for last dark text on*/ 
+.text-gray {
+    color: #333;
+}
+
+/*set nav button to right*/
+@media only screen and (min-width: 768px) and (max-width:1100px) {
+    .started {
+        margin-right: -4rem;
+    }
+}
+
+
+.orbit .center-image img:not(:first-child):hover {
+    opacity: 0;
+}
+
+
+
+@keyframes orbit {
+    100% {
+        rotate: 1turn;
+   }
+}
+@keyframes hold-position {
+    100% {
+        rotate: -1turn;
+   }
+}
+@keyframes throb {
+    100% {
+        scale: 1.05;
+   }
+}
+
+.animate-orbit {
+    animation: orbit 120s linear infinite;
+    -webkit-animation: orbit 120s linear infinite;
+}
+
+
+.orbit ul:hover {
+    animation-play-state: paused;
+    --orbit-play-state: paused;
+}
+
+.orbit li {
+    width: 8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.orbit li:hover {
+    --throb-play-state: paused;
+}
+.orbit li:nth-child(1) {
+    --throb-delay: 0ms;
+}
+.orbit li:nth-child(2) {
+    --throb-delay: 500ms;
+}
+.orbit li:nth-child(3) {
+    --throb-delay: 1000ms;
+}
+.orbit li:nth-child(4) {
+    --throb-delay: 1500ms;
+}
+.orbit li:nth-child(5) {
+    --throb-delay: 2000ms;
+}
+.orbit li:nth-child(6) {
+    --throb-delay: 2500ms;
+}
+.orbit li:nth-child(7) {
+    --throb-delay: 3000ms;
+}
+.orbit li:nth-child(8) {
+    --throb-delay: 3500ms;
+}
+.orbit li > * {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: inherit;
+    position: absolute;
+    animation: orbit 120s linear reverse infinite, throb 1s var(--throb-delay) ease-in-out infinite alternate;
+    animation-play-state: var(--orbit-play-state, running), var(--throb-play-state, running);
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+
+.orbit li > p {
+    background: var(--text-bg);
+    transition: opacity 500ms;
+    opacity: 0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+}
+.orbit li:hover > p {
+    opacity: 1;
+}
+
+.orbit li:nth-child(1) {
+    --icon-bg: hsl(265, 100%, 60%);
+    --text-bg: hsl(265, 93%, 84%);
+    transform: translate(15rem, 0rem);
+    -webkit-transform: translate(15rem, 0rem);
+    -moz-transform: translate(15rem, 0rem);
+    -ms-transform: translate(15rem, 0rem);
+    -o-transform: translate(15rem, 0rem);
+}
+.orbit li:nth-child(2) {
+    --icon-bg: 	hsl(163, 88%, 39%);
+    --text-bg: hsl(163, 96%, 90%);
+    transform: translate(10rem, 10rem);
+    -webkit-transform: translate(10rem, 10rem);
+    -moz-transform: translate(10rem, 10rem);
+    -ms-transform: translate(10rem, 10rem);
+    -o-transform: translate(10rem, 10rem);
+}
+.orbit li:nth-child(3) {
+    --icon-bg: 	hsl(244, 82%, 57%);
+    --text-bg: 	hsl(244, 37%, 76%);
+    transform: translate(0, 15rem);
+    -webkit-transform: translate(0, 15rem);
+    -moz-transform: translate(0, 15rem);
+    -ms-transform: translate(0, 15rem);
+    -o-transform: translate(0, 15rem);
+}
+.orbit li:nth-child(4) {
+    --icon-bg: 	hsl(17, 88%, 60%);
+    --text-bg: hsl(17, 61%, 79%);
+    transform: translate(-10rem, 10rem);
+    -webkit-transform: translate(-10rem, 10rem);
+    -moz-transform: translate(-10rem, 10rem);
+    -ms-transform: translate(-10rem, 10rem);
+    -o-transform: translate(-10rem, 10rem);
+}
+.orbit li:nth-child(5) {
+    --icon-bg: hsl(220, 84%, 32%);
+    --text-bg:hsl(220, 26%, 60%);
+    transform: translate(-15rem, 0rem);
+    -webkit-transform: translate(-15rem, 0rem);
+    -moz-transform: translate(-15rem, 0rem);
+    -ms-transform: translate(-15rem, 0rem);
+    -o-transform: translate(-15rem, 0rem);
+}
+.orbit li:nth-child(6) {
+    --icon-bg: hsl(204, 87%, 39%);
+    --text-bg: 	hsl(205, 44%, 68%);
+    transform: translate(-10rem, -10rem);
+    -webkit-transform: translate(-10rem, -10rem);
+    -moz-transform: translate(-10rem, -10rem);
+    -ms-transform: translate(-10rem, -10rem);
+    -o-transform: translate(-10rem, -10rem);
+}
+.orbit li:nth-child(7) {
+    --icon-bg: 	hsl(17, 88%, 60%);
+    --text-bg: hsl(17, 61%, 79%);
+    transform: translate(0, -15rem);
+    -webkit-transform: translate(0, -15rem);
+    -moz-transform: translate(0, -15rem);
+    -ms-transform: translate(0, -15rem);
+    -o-transform: translate(0, -15rem);
+}
+.orbit li:nth-child(8) {
+    --icon-bg: hsl(45, 94%, 42%);
+    --text-bg: 	hsl(44, 88%, 78%);
+    transform: translate(7.5rem, -7.5rem);
+    -webkit-transform: translate(10rem, -10rem);
+    -moz-transform: translate(7.5rem, -7.5rem);
+    -ms-transform: translate(7.5rem, -7.5rem);
+    -o-transform: translate(7.5rem, -7.5rem);
+}
+
+
+
+
+@media (max-width: 1536px) {
+   
+.orbit li:nth-child(1) {
+    --icon-bg: hsl(265, 100%, 60%);
+    --text-bg: hsl(265, 93%, 84%);
+    transform: translate(11.25rem, 0rem);
+    -webkit-transform: translate(11.25rem, 0rem);
+    -moz-transform: translate(11.25rem, 0rem);
+    -ms-transform: translate(11.25rem, 0rem);
+    -o-transform: translate(11.25rem, 0rem);
+}
+.orbit li:nth-child(2) {
+    --icon-bg: 	hsl(163, 88%, 39%);
+    --text-bg: hsl(163, 96%, 90%);
+    transform: translate(7.5rem, 7.5rem);
+    -webkit-transform: translate(7.5rem, 7.5rem);
+    -moz-transform: translate(7.5rem, 7.5rem);
+    -ms-transform: translate(7.5rem, 7.5rem);
+    -o-transform: translate(7.5rem, 7.5rem);
+}
+.orbit li:nth-child(3) {
+    --icon-bg: 	hsl(244, 82%, 57%);
+    --text-bg: 	hsl(244, 37%, 76%);
+    transform: translate(0, 11.25rem);
+}
+.orbit li:nth-child(4) {
+    --icon-bg: 	hsl(17, 88%, 60%);
+    --text-bg: hsl(17, 61%, 79%);
+    transform: translate(-7.5rem, 7.5rem);
+    -webkit-transform: translate(-7.5rem, 7.5rem);
+    -moz-transform: translate(-7.5rem, 7.5rem);
+    -ms-transform: translate(-7.5rem, 7.5rem);
+    -o-transform: translate(-7.5rem, 7.5rem);
+}
+.orbit li:nth-child(5) {
+    --icon-bg: hsl(220, 84%, 32%);
+    --text-bg:hsl(220, 26%, 60%);
+    transform: translate(-11.25rem, 0rem);
+    -webkit-transform: translate(-11.25rem, 0rem);
+    -moz-transform: translate(-11.25rem, 0rem);
+    -ms-transform: translate(-11.25rem, 0rem);
+    -o-transform: translate(-11.25rem, 0rem);
+}
+.orbit li:nth-child(6) {
+    --icon-bg: hsl(204, 87%, 39%);
+    --text-bg: 	hsl(205, 44%, 68%);
+    transform: translate(-7.5rem, -7.5rem);
+}
+.orbit li:nth-child(7) {
+    --icon-bg: 	hsl(17, 88%, 60%);
+    --text-bg: hsl(17, 61%, 79%);
+    transform: translate(0, -11.25rem);
+}
+.orbit li:nth-child(8) {
+    --icon-bg: hsl(45, 94%, 42%);
+    --text-bg: 	hsl(44, 88%, 78%);
+    transform: translate(7.5rem, -7.5rem);
+}
+  }
