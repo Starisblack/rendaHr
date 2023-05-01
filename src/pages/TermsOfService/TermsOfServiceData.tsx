@@ -34,14 +34,14 @@ export const termsData = [
     title: "Transaction Charge",
     desc: "RendaHR shall charge you a transaction processing fee for all payroll transactions processed via our website. These charge may vary depending on the volume of the transaction. We will try our best to inform you at all times what your transaction charge per transaction shall be.",
     subDesc:
-      "Here’s an idea of what we charge per payroll transaction processed (not fixed).",
-    subContent: {
+      "Here’s an idea of what we charge per payroll transaction processed (not fixed):",
+      subContent: {
       title: "Nigeria",
       content: [
         "18 Naira + 7.5% VAT for Transactions up to N5,000.",
         "40 Naira + 7.5% VAT for Transactions from N5,001 to N50,000.",
         "70 Naira + 7.5% VAT for Transactions more than N50,001.",
-        "*Please note that this fees includes switch processing fees.",
+        "*Please note that these fees includes switch processing fees.",
       ],
     },
   },
@@ -69,14 +69,14 @@ export const termsData = [
   {
     title: "Dispute Resolution",
     descLists: [
-      "If you are a resident of, or a company organized under a state or territory of, the United States, then all disputes regarding this Agreement will be settled exclusively in any court of competent jurisdiction located in the Federal Republic of Nigeria. Each party hereby consents and submits to the personal jurisdiction of such courts. Each party hereby waives any objection based on forum non-convenient and any objection to venue of any action instituted under this Agreement to the extent that an action is brought in the courts identified above.",
+      "If you are a resident of, or a company organized under a state or territory of, the Federal Republic of Nigeria, then all disputes regarding this Agreement will be settled exclusively in any court of competent jurisdiction located in the Federal Republic of Nigeria. Each party hereby consents and submits to the personal jurisdiction of such courts. Each party hereby waives any objection based on forum non-convenient and any objection to venue of any action instituted under this Agreement to the extent that an action is brought in the courts identified above.",
       "Otherwise, all disputes regarding this Agreement shall be finally resolved by binding arbitration before a single arbitrator pursuant to the then-existing Rules of Conciliation and Arbitration (“Rules”), and under the auspices, of the International Chamber of Commerce (“ICC”). The arbitrator shall be knowledgeable in the chosen law and the software industry. At either party’s request, the arbitrator shall give a written opinion stating the factual basis and legal reasoning for the decision. The arbitrator shall have the authority to determine issues of arbitrability and to award damages as permitted by this Agreement. The parties, their representatives, and any other participants shall hold the existence, content, and result of the arbitration in confidence. The arbitration proceedings will take place in Lagos, Nigeria. Judgment on the arbitration award may be entered in any court having jurisdiction.",
       "Notwithstanding the foregoing, RendaHR may, at its sole discretion, seek preliminary judicial relief in any court of competent jurisdiction (including, but not limited to, preliminary injunctive relief) as necessary to enforce its rights in its intellectual property.",
     ],
   },
   {
     title: "Limitations of Actions",
-    desc: "No action arising out of this Agreement, regardless of form, may be brought by you more than one year after the date the cause of action has accrued.",
+    desc: "No action arising out of this Agreement, regardless of form, may be brought by you more than six months after the date the cause of action has accrued.",
   },
   {
     title: "Support",
