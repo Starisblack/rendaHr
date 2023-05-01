@@ -21,14 +21,14 @@ const OnBoardingModal = () => {
       icon: corehr,
       title: "CoreHR System",
       desc: "Our system lets you focus on strategic HR by letting you automate much of your employee life-cycle processes - from hire through to exit.",
-      url: "https://renda-hr.netlify.app/performance"
+      url: "/performance"
     },
 
     {
       icon: payroll,
       title: "Payroll Management",
       desc: "Prepare payroll auto-magically and never lose an employee over delays or payroll mistakes.",
-      url: "https://renda-hr.netlify.app/payroll"
+      url: "/payroll"
     },
   ];
 

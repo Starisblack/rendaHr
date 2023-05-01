@@ -93,7 +93,7 @@ export const heroCarouselData = [
     text: "#0cbc8b",
     bg: "#cdfef0",
     icon: Employer,
-    title: "Employer of Record",
+    title: "Exit Management",
   },
   {
     text: "#463aeb",
