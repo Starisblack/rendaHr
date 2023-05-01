@@ -48,6 +48,12 @@
   }
  }
 
+ @media (min-width: 769px) and (max-width: 780px) {
+    .NavigationItem a{
+      padding: 5px;
+    }
+ }
+
 
 @media (max-width: 631px) {
  .NavigationItem a {

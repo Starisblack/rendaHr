@@ -1,15 +1,14 @@
-import React, {FC} from "react"
+import React, { FC } from "react";
 import "./NavigationItems.css";
 import NavigationItem from "./NavigationItem/NavigationItem";
 import { Link } from "react-router-dom";
 
 type NavigationItemsProps = {
-  close?: () => void
-  clicked?: () => void
-}
+  close?: () => void;
+  clicked?: () => void;
+};
 
-
-const NavigationItems:FC<NavigationItemsProps> = (props) => {
+const NavigationItems: FC<NavigationItemsProps> = (props) => {
   const menuItems = [
     {
       title: "Products",
@@ -63,7 +62,7 @@ const NavigationItems:FC<NavigationItemsProps> = (props) => {
       {menuItems.map((item) => {
         return (
           <div key={item.title} className="dropdown">
-            <NavigationItem >
+            <NavigationItem>
               {item.title}
               <i className="fas fa-chevron-down"></i>
             </NavigationItem>
@@ -74,7 +73,7 @@ const NavigationItems:FC<NavigationItemsProps> = (props) => {
                     {column.details.map((list) => {
                       return (
                         <li onClick={props.close} key={list.title}>
-                            <Link to={list.url}>{list.title}</Link>
+                          <Link to={list.url}>{list.title}</Link>
                         </li>
                       );
                     })}
@@ -86,7 +85,9 @@ const NavigationItems:FC<NavigationItemsProps> = (props) => {
         );
       })}
 
-      <NavigationItem clicked={props.close} link="/pricing">Pricing</NavigationItem>
+      <NavigationItem clicked={props.close} link="/pricing">
+        Pricing
+      </NavigationItem>
     </ul>
   );
 };
