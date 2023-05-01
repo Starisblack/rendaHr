@@ -26,7 +26,7 @@ import {
   Payrolls,
 } from "../assets/features";
 import { Nolan } from "../assets/testimonials";
-import { AvatarThree, Instagram, Slack, Twitter } from "../assets/join";
+import { AvatarThree, Instagram, Slack, Twitter, Idowu} from "../assets/join";
 import { AvatarTwo } from "../assets/join";
 import Logo from "../components/Logo/Logo";
 
@@ -35,28 +35,28 @@ export const menuData = {
   companyOne: [
     { title: "About Us", url: "/" },
     { title: "Blog", url: "/" },
-    { title: "Terms of Service", url: "https://renda-hr.netlify.app/terms-of-service" },
+    { title: "Terms of Service", url: "/terms-of-service" },
   ],
   companyTwo: [
-    { title: "Contact Us", url: "https://renda-hr.netlify.app/contact" },
+    { title: "Contact Us", url: "/contact" },
     { title: "Support Center", url: "/" },
   ],
   companyThree: [
-    { title: "FAQs", url: "https://renda-hr.netlify.app/pricing/#faqs" },
-    { title: "Privacy", url: "https://renda-hr.netlify.app/privacy" },
+    { title: "FAQs", url: "/pricing/#faqs" },
+    { title: "Privacy", url: "/privacy" },
   ],
   productsOne: [
     {
       title: "Talent Sourcing",
       url: "https://reacthq.dev",
     },
-    { title: "Payroll Mgmt", url: "https://renda-hr.netlify.app/payroll" },
+    { title: "Payroll Mgmt", url: "/payroll" },
   ],
   productsTwo: [
     { title: "Core-HR", url: "/" },
-    { title: "Performance", url: "https://renda-hr.netlify.app/performance" },
+    { title: "Performance", url: "/performance" },
   ],
-  productsThree: [{ title: "Attendance", url: "https://renda-hr.netlify.app/attendance" }],
+  productsThree: [{ title: "Attendance", url: "/attendance" }],
 };
 
 //hero text
@@ -74,7 +74,7 @@ export const heroText = {
     "Whenever...",
   ],
   subHeaderOne: [
-    "There is no need to use many tools for your people management.",
+    "There is no need to use many tools for your people management,",
   ],
   subHeaderTwo: [
     "Take advantage of our all-in-one software to streamline your HR.",
@@ -133,7 +133,7 @@ export const heroCarouselData = [
   },
 ];
 //brand
-export const brandTitle = "TRUSTED BY TOP COMPANIES WORLDWIDE";
+export const brandTitle = "TRUSTED BY GLOBAL COMPANIES WORLDWIDE";
 
 //tabs
 export const tabsData = [
@@ -175,7 +175,7 @@ export const tabsData = [
       ],
     },
     img: coreHr,
-    link: "https://renda-hr.netlify.app/performance"
+    link: "/performance"
     
   },
   {
@@ -192,7 +192,7 @@ export const tabsData = [
       ],
     },
     img: payroll,
-    link: "https://renda-hr.netlify.app/payroll"
+    link: "/payroll"
   },
 ];
 
@@ -239,33 +239,39 @@ export const features = {
 
 //Testimonials
 export const testimonials = {
-  title: "Everyone on the team Loves us. Here’s Why:",
+  title: "Everyone on the team loves us. Here’s Why:",
   // subtitle: "Don’t just take our word for it.",
   testimonial: [
     {
       text: "I had to process about 25 or 30 people very quickly, like in a day, and we did not have RendaHR at the time so I was doing that all manually. Using it (RendaHR) helps me automate my work, which is important if you want to scale and bring new employees and just operate better.",
-      name: "Gabriel Nolan",
-      role: "Consultant",
+      name: "Gabriel Salem",
+      role: "HR Consultant",
       img: Nolan,
     },
     {
       text: "The tool RendaHR has really automated some of our company’s processes. We now spend less time doing manual work. It’s making talent sourcing and distribution very easy for us. Thanks to its scheduling feature, we don’t need staff to work outside of business hours.",
-      name: "Peter Beglin",
-      role: "Advisor",
+      name: "Peter Anyawun",
+      role: "CEO",
       img: AvatarTwo,
     },
     {
-      text: "Finally an easy to use, all in one product - being developed for the average personnel. Extremely reasonable fees and a responsive developer team. This in my opinion will disrupt the other utterly monopolized talent sourcing market and help bring the to door, the best talents",
-      name: "Clark Jenkins",
-      role: "Strategist",
+      text: "It's really painless for me to go from 1-8 employees. It's not an effort. I dont have to think about it. My onboarding time and hiring time is two minutes for an employee. Thanks to RendaHR.",
+      name: "Adenuga Ayodeji",
+      role: "Business Strategist",
       img: AvatarThree,
+    },
+    {
+      text: "RendaHR time-off is linked to payroll so I no longer have to chase down PTO requests, saving us substantial money.",
+      name: "Idowu Eniola",
+      role: "Business Strategist",
+      img: Idowu,
     },
   ],
 };
 
 //join
 export const join = {
-  title: "Hire Fast, Onboard Faster & Enhance Candidate Experience",
+  title: "Hire Fast, Onboard Faster & Enhance Staff Experience",
   subtitle:
     "Turbo-charge your people management by tapping into our pool of HR resources ⚡",
   tabOne: {

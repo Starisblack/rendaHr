@@ -60,8 +60,8 @@ const Footer = () => {
               <Logo height="50px" />
             </div>
             <p className="logo-text">
-              ReendaHR is an AI Powered Core-HR Software for people management
-              and everything in between.
+              ReendaHR is an AI Powered Core-HR Software that helps you with your people management
+             from hire to fire and everything in between.
             </p>
           </div>
 
