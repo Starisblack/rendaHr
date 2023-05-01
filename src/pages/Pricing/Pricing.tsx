@@ -10,19 +10,30 @@ import { useLocation } from "react-router-dom";
 const Pricing = () => {
   const { hash } = useLocation();
 
-  useEffect(() => {
-    const elementToScroll: any = document.getElementById(hash?.replace("#", ""));
+//   useEffect(() => {
+//   const elementToScroll = hash ? document.getElementById(hash.replace("#", "")) : null;
 
-    if (hash === "") {
-      window.scrollTo(0, 0);
-    } else {
-      window.scrollTo({
-        top: elementToScroll.offsetTop - 0,
-        behavior: "smooth",
-      });
-    }
+//   if (elementToScroll) {
+//     window.scrollTo({
+//       top: elementToScroll.offsetTop - 0,
+//       behavior: "smooth",
+//     });
+//   } else {
+//     window.scrollTo(0, 0);
+//   }
+// }, [hash]);
+useEffect(() => {
+  const elementToScroll = hash ? document.getElementById(hash.replace("#", "")) : null;
 
-  }, [hash]);
+  if (elementToScroll) {
+    window.scrollTo({
+      top: elementToScroll.offsetTop - 0,
+      behavior: "smooth",
+    });
+  } else {
+    window.scrollTo(0, 0);
+  }
+}, [hash]);
 
   return (
     <div className="page pricing-page">

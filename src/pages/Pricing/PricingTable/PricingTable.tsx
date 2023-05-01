@@ -4,6 +4,27 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import { priceTableData } from "../PriceTableData";
 
+// const PricingTable = () => {
+//   return (
+//     <table className="price-table table-spacing">
+//       <thead>
+//         <tr className="table-price-category">
+//           <th></th>
+//           <th>Inspire</th>
+//           <th>Engage</th>
+//           <th>Boost</th>
+//         </tr>
+//       </thead>
+
+//       {priceTableData?.map((table) => {
+//         return (
+//           <tbody key={table.tableTitle}>
+//             <tr key={table.tableTitle}>
+//               <th className={table.tableTitle + " table-title"}>{table.tableTitle}</th>
+//               <th></th>
+//               <th></th>
+//               <th></th>
+//             </tr>
 const PricingTable = () => {
   return (
     <table className="price-table table-spacing">
@@ -25,7 +46,7 @@ const PricingTable = () => {
               <th></th>
               <th></th>
             </tr>
-
+            
             {table.tableContents.map((content) => {
               return (
                 <tr key={content.title}>

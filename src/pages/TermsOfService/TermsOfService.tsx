@@ -8,7 +8,7 @@ const TermsOfService = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  return (
+    return (
     <div className="page tc-page">
       <h1 className="tc-title">RendaHR - Terms Of Service</h1>
       <div className="tc-details-container">
@@ -25,7 +25,6 @@ const TermsOfService = () => {
               <p className="tc-detail-title">{term.title} </p>
               <p className="tc-detail-desc">{term.desc}</p>
               <p className="tc-detail-desc">{term.subDesc}</p>
-
               {/* present only at Transaction charge section */}
               <div>
                 <p className="tc-detail-title">{term.subContent?.title}</p>

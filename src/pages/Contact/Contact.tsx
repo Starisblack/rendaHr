@@ -6,7 +6,6 @@ import { PlaceOutlined, MailOutline } from "@mui/icons-material";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 
-
 const Contact = () => {
  
   useEffect(() => {
@@ -55,7 +54,7 @@ const Contact = () => {
           <Form />
         </Grid>
         <Grid item md={6}>
-          {contactDetails.map((detail: any) => {
+          {/* {contactDetails.map((detail: any) => {
             return (
               <div key={detail.title[0].content} className="contact-detail-box">
                 <detail.icon sx={{ fontSize: 30 }} />
@@ -70,7 +69,23 @@ const Contact = () => {
                 </div>
               </div>
             );
-          })}
+          })} */}
+{contactDetails.map((detail: any) => {
+  return (
+    <div key={detail.title[0].content} className="contact-detail-box">
+      <detail.icon sx={{ fontSize: 30 }} />
+      <div>
+        {detail.title?.map((title: any) => {
+          return (
+            <a key={title.content} className="contact-detail-title" href={title?.url}>
+                {title.content} 
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  );
+})}
 
           <div className="social-icons-contact">
             <a href="/">
