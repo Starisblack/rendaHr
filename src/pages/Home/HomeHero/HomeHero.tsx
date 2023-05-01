@@ -8,7 +8,7 @@ import HeroCarousel from './HeroCarousel';
 const HomeHero = () => {
 
   return (
-<div className={`${styles.paddingX} w-full flex min-[1120px]:flex-row flex-col lg:justify-between lg:gap-0 gap-36 justify-center items-center lg:pb-0 md:pb-28 pb-[5rem]`}>
+<div className={`${styles.paddingX} w-full flex min-[1120px]:flex-row flex-col lg:justify-between lg:gap-0 gap-36 justify-center items-center  md:pb-28 pb-[5rem]`}>
     <div className='font-mulish w-full flex-1 flex flex-col xl:gap-14 md:gap-8 gap-7 lg:mt-0'>
         <h1 className='font-bold xl:text-6xl md:text-5xl xs:text-3xl text-2xl xl:leading-[1.3] md:leading-[1.2] tracking-wide'>
             {heroText.header.map((text, index) => (

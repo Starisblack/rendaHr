@@ -4,6 +4,7 @@ import HomeHero from "./HomeHero/HomeHero";
 import Tabs from "../../components/Tabs";
 import HomeTestimonials from "./HomeTestimonials";
 import Join from "../../components/Join";
+import "./Home.css"
 
 const Home = () => {
   return (

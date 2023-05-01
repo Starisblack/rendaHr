@@ -1,10 +1,9 @@
 .Toolbar {
   width: 100%;
   background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
+  position: absolute;
+  top: 0;
   gap: 30px;
   align-items: center;
   padding: 2vw 10vw;
@@ -38,9 +37,7 @@
   margin-left: auto;
 }
 
-.scroll .Toolbar {
-  background: white;
-}
+
 
 
 
