@@ -179,7 +179,7 @@ export const tabsData = [
     
   },
   {
-    label: "Payroll Management",
+    label: "Payroll & People Management",
     content: {
       title: "Payroll Management",
       subtitle:
