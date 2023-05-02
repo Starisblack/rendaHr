@@ -21,14 +21,14 @@ const OnBoardingModal = () => {
       icon: corehr,
       title: "CoreHR System",
       desc: "Our system lets you focus on strategic HR by letting you automate much of your employee life-cycle processes - from hire through to exit.",
-      url: "/performance"
+      url: "https://app.rendahr.com/register"
     },
 
     {
       icon: payroll,
       title: "Payroll Management",
       desc: "Prepare payroll auto-magically and never lose an employee over delays or payroll mistakes.",
-      url: "/payroll"
+      url: "https://app.rendahr.com/register"
     },
   ];
 
