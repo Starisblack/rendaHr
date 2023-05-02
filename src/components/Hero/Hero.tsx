@@ -32,7 +32,7 @@ const Hero = () => {
 
                       
                         <div className="staff-num">
-                            <h2>40,000</h2>
+                            <h2>10,000</h2>
                             <p>Staff Served</p>
                         </div>
                         <div className="divider-container">
@@ -41,7 +41,7 @@ const Hero = () => {
                         </div>
 
                         <div>
-                            <h2>$5B</h2>
+                            <h2>$5M</h2>
                             <p>Salaries Disbursed</p>
                         </div>
 
