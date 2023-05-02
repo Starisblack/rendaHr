@@ -18,8 +18,8 @@ const Performance = () => {
       <section id="pm-call-actions">
         <PerformCTA />
         <CallToAction
-          title=" Ready to grow your business? Take your staff Reward a notch higher - The
-        RendaHR way."
+          title=" Ready to increse staff productivity?
+          Join RendaHR"
         />
       </section>
     </div>

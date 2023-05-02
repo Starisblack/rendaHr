@@ -4,3 +4,4 @@ export {default as AvatarThree} from './avatar-three.png';
 export {default as Twitter} from './twitter.png';
 export {default as Instagram} from './instagram.png';
 export {default as Slack} from './slack.png'; 
+export {default as Idowu} from './Idowu.png';

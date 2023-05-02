@@ -41,7 +41,7 @@ const Attendance = () => {
           <DescContainer
             title="Time-Track Staff Engagement with Ease."
             desc="Keep track of how your employees and freelance staff spend their
-            time through a solid attendance management system."
+            time through a solid attendance management system on RendaHR."
           />
           <ImgContainer
             img={calendar}

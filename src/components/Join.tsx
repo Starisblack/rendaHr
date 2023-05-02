@@ -78,10 +78,11 @@ const Join = () => {
             {join.tabTwo.subHeader}
           </p>
           <Button
+            link="/get-started"
             className="group bg-white hover:bg-blackish lg:px-[30px] md:py-4 md:mt-2 mt-1 md:px-4 px-5 py-3 gap-2 rounded-lg w-full md:max-w-[230px] max-w-[180px]"
             children={
               <span className="font-poppins lg:text-xl text-sm group-hover:text-white text-[#0c75bd] font-medium">
-                Request a Demo
+                Request A Demo
               </span>
             }
           />

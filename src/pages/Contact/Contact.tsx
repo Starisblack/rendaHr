@@ -15,14 +15,14 @@ const Contact = () => {
   const contactDetails: any = [
     {
       title: [
-        {content: "Hydratech Software Solutions Limited, Victoria Island, Lagos, Nigeria."}
+        {content: "Hydratech Software Solutions Limited, Lagos, Nigeria."}
       ],
       icon: PlaceOutlined,
     },
 
     {
       title: [
-        { content: "+234 - 5678 - 12354", url: "tel:+234 - 5678 - 12354" },
+        { content: "+234 -7088-882-4511", url: "tel:+234 -7088-882-4511" },
       ],
       icon: PhoneIcon,
     },
@@ -30,7 +30,7 @@ const Contact = () => {
     {
       title: [
         { content: "hello@joinrenda.com", url: "mailto:hello@joinrenda.com" },
-        { content: "sales@joinrenda.com", url: "mailto:sales@joinrenda.com" },
+        
       ],
       icon: MailOutline,
     },
