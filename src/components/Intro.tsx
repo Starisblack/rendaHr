@@ -3,13 +3,13 @@ import React from "react";
 const Intro = () => {
   return (
     <div>
-      <div className="flex max-[769px]:flex-wrap gap-8 py-10  md:py-24">
+      <div className="flex max-[769px]:flex-wrap gap-8 py-10  md:py-40">
         <div className="basis-full md:basis-3/12">
           <h2 className="font-nunito text-[30px]  md:text-[50px] text-center leading-normal md:leading-[55px]">
             The new age of HR’s Revolution.
           </h2>
         </div>
-        <div className="basis-full md:basis-9/12 flex flex-col justify-between">
+        <div className="basis-full md:basis-9/12 flex flex-col justify-between md:pl-14">
           <p className="font-nunito text-[14px] md:text-[20px]  text-muted">
             The world is transforming, and so is the workplace. HR trends such
             as hybrid working, remote employees, agile organisations, and
