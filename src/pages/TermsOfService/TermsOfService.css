@@ -83,6 +83,9 @@ ol > li:before {
   width: 20%;
 }
 
+.tos-links{
+  font-weight: 700;
+}
 
 @media (max-width: 631px) {
   .tc-details-container {

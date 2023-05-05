@@ -11,6 +11,7 @@ import Contact from "./pages/Contact/Contact";
 import TermsOfService from "./pages/TermsOfService/TermsOfService";
 import Privacy from "./pages/Privacy/Privacy";
 import Home from "./pages/Home/Home"
+import About from "./pages/About/About";
 
 
 const App: React.FC = () =>{
@@ -18,6 +19,7 @@ const App: React.FC = () =>{
     <Layout>
       <Routes>
       <Route path="/"  element={<Home />}/>
+      <Route path="/about" element={<About/>} />
       <Route path="/payroll"   element={<Payroll />}/>
       <Route path="/pricing" element={<Pricing />}/>
       <Route path="/performance" element={<Performance /> } />

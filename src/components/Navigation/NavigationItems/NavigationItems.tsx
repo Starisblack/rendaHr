@@ -36,7 +36,7 @@ const NavigationItems: FC<NavigationItemsProps> = (props) => {
       columns: [
         {
           details: [
-            { title: "About Us", url: "/" },
+            { title: "About Us", url: "/about" },
             { title: "Blog", url: "/" },
             { title: "Terms of Service", url: "/terms-of-service" },
           ],

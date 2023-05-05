@@ -60,7 +60,7 @@ export const termsData = [
   },
   {
     title: "Termination",
-    desc: "RendaHR reserves the right to terminate your access to its software or services at any time, without notice, for any reason. You may also terminate your use of RendaHR at any time by contacting us at support@joinrenda.com.",
+    desc: "RendaHR reserves the right to terminate your access to its software or services at any time, without notice, for any reason. You may also terminate your use of RendaHR at any time by contacting us at <a class='tos-links text-primary hover:text-secondary-dark' href='mailto:support@joinrenda.com'>support@joinrenda.com</a>.",
   },
   {
     title: "Governing Law and Language",
@@ -110,10 +110,10 @@ export const termsData = [
       },
     ],
     extraDesc: [
-      "(*) Times provided are based on Africa time zone and working hours (8am-6pm). SLA resolutiontime is based on the moment when Customer’s incident is acknowledged by the Customer Success (CS) team by email. All incidents above need to be reported by Customer to support@joinrenda.com for tracing.",
+      "(*) Times provided are based on Africa time zone and working hours (8am-6pm). SLA resolutiontime is based on the moment when Customer’s incident is acknowledged by the Customer Success (CS) team by email. All incidents above need to be reported by Customer to <a class='tos-links text-primary hover:text-secondary-dark' href='mailto:support@joinrenda.com'>support@joinrenda.com</a> for tracing.",
       "There is no SLA for new feature request.",
       "Renda support team will acknowledge incidents, classify their severity and inform Customer on next steps within 4 working hours (maximum) of receiving the request.",
-      "When RendaHR Services is unavailable, or material system or API outages, or defects are detected, the User will report the issue to RendaHR via support@joinnrenda.com.",
+      "When RendaHR Services is unavailable, or material system or API outages, or defects are detected, the User will report the issue to RendaHR via <a class='tos-links text-primary hover:text-secondary-dark' href='mailto:support@joinrenda.com'>support@joinrenda.com</a>.",
     ],
   },
   {

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import "./TermsOfService.css";
 import { termsData } from "./TermsOfServiceData";
+import parse from 'html-react-parser';
 
 const TermsOfService = () => {
   useEffect(() => {
@@ -89,7 +90,7 @@ const TermsOfService = () => {
 
                   <div>
                     {term.extraDesc?.map((desc) => {
-                      return <p key={desc} className="tc-detail-desc">{desc}</p>;
+                      return <p key={desc} className="tc-detail-desc">{parse(desc)}</p>;
                     })}
                   </div>
                 </div>
