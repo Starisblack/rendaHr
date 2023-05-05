@@ -24,8 +24,9 @@ const NavigationItems: FC<NavigationItemsProps> = (props) => {
         },
         {
           details: [
-            { title: "Core-HR", url: "/" },
             { title: "Performance", url: "/performance" },
+            { title: "Core-HR", url: "/" },
+            
           ],
         },
         { details: [{ title: "Attendance", url: "/attendance" }] },

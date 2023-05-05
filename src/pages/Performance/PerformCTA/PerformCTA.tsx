@@ -9,7 +9,7 @@ const PerformCTA = () => {
 
 
   const accordionTitles = [
-    "Competency Management",
+    "Competence Management",
     "Objectives and Key Results",
     "Performance Reports",
   ];

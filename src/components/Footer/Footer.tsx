@@ -12,10 +12,10 @@ const Footer = () => {
     {
       title: "Products",
       content: [
-        { title: "Technical Hiring", url: "/" },
-        { title: "CoreHR Software", url: "/" },
+        { title: "Technical Hiring", url: "https://reacthq.dev" },
+        { title: "Attendance Management", url: "/attendance" },
         { title: "Payroll Management", url: "/payroll" },
-        { title: "People Management", url: "/" },
+        { title: "Performance Management", url: "/performance" },
       ],
     },
 
@@ -23,7 +23,7 @@ const Footer = () => {
       title: "Company",
       content: [
         { title: "About us", url: "/" },
-        { title: "FAQs", url: "/faqs" },
+        { title: "FAQs", url: "/pricing/#faqs" },
         { title: "Talk to an expert", url: "/" },
       ],
     },
@@ -31,8 +31,8 @@ const Footer = () => {
     {
       title: "Legal",
       content: [
-        { title: "Terms & Conditions", url: "/" },
-        { title: "Privacy", url: "/" },
+        { title: "Terms & Conditions", url: "/terms-of-service" },
+        { title: "Privacy", url: "/privacy" },
       ],
     },
   ];
