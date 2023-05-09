@@ -32,7 +32,7 @@ const Layout: FC<LayoutProps> = (props) => {
 
     return (
         <div>
-          <TopHeader />
+         {pathname !== "/get-started" && <TopHeader />}
           <div style={{position: "relative"}}>
           {pathname !== "/get-started"  && <>
             <Toolbar clicked={sideDrawerToggleHandler} open={showSideDrawer} />
