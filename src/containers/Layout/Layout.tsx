@@ -5,6 +5,7 @@ import { useState } from "react";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 import Footer from "../../components/Footer/Footer";
 import { useLocation } from "react-router-dom";
+import TopHeader from "../../components/TopHeader/TopHeader";
 
 
 type LayoutProps ={
@@ -31,6 +32,8 @@ const Layout: FC<LayoutProps> = (props) => {
 
     return (
         <div>
+          <TopHeader />
+          <div style={{position: "relative"}}>
           {pathname !== "/get-started"  && <>
             <Toolbar clicked={sideDrawerToggleHandler} open={showSideDrawer} />
             <SideDrawer open={showSideDrawer} closed={sideDrawerClosedHandler}/>
@@ -39,6 +42,7 @@ const Layout: FC<LayoutProps> = (props) => {
                 {props.children}
             </main>
             {pathname !== "/get-started" && <Footer /> }
+            </div>
         </div>
     )
 }

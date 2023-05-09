@@ -60,7 +60,7 @@ export const termsData = [
   },
   {
     title: "Termination",
-    desc: "RendaHR reserves the right to terminate your access to its software or services at any time, without notice, for any reason. You may also terminate your use of RendaHR at any time by contacting us at <a class='tos-links text-primary hover:text-secondary-dark' href='mailto:support@joinrenda.com'>support@joinrenda.com</a>.",
+    desc: "RendaHR reserves the right to terminate your access to its software or services at any time, without notice, for any reason. You may also terminate your use of RendaHR at any time by contacting us at support@joinrenda.com",
   },
   {
     title: "Governing Law and Language",

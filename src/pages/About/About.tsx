@@ -1,6 +1,6 @@
 import React from "react";
 import Values from "../../components/Values";
-import AboutCTA from "../../AboutCTA";
+import AboutCTA from "../../components/AboutCTA";
 import Records from "../../components/Records";
 import Intro from "../../components/Intro";
 

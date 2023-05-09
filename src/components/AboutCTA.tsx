@@ -1,5 +1,5 @@
 import React from 'react'
-import mockup from "./assets/about/mockUp.png"
+import mockup from "../assets/about/mockUp.png"
 
 const AboutCTA = () => {
   return (
