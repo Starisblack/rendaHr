@@ -32,6 +32,7 @@ const Layout: FC<LayoutProps> = (props) => {
 
     return (
         <div>
+
          {pathname !== "/get-started" && <TopHeader showSideDrawer={showSideDrawer} />}
           <div style={{position: "relative"}}>
           {pathname !== "/get-started"  && <>
