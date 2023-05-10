@@ -8,8 +8,8 @@ const TopHeader = () => {
   return (
     <div className="top-header-container">
          <img style={{height: "30px", width: "30px"}} src={partyEmoji} alt= "party" />
-        <p>Web Development Class starts March 12, 2023</p>
-        <Link to="/get-started" className="take-test-btn">Take Eligibility Test <EastIcon /></Link>
+        <p>RendaHR is completely free for teams below 10!</p>
+        <Link to="/get-started" className="take-test-btn">Get Started <EastIcon /></Link>
     </div>
   )
 }

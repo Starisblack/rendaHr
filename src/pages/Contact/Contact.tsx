@@ -75,13 +75,23 @@ const Contact = () => {
     <div key={detail.title[0].content} className="contact-detail-box">
       <detail.icon sx={{ fontSize: 30 }} />
       <div>
-        {detail.title?.map((title: any) => {
+        {/* {detail.title?.map((title: any) => {
           return (
             <a key={title.content} className="contact-detail-title" href={title?.url}>
                 {title.content} 
             </a>
           );
-        })}
+        })} */}
+        {detail.title?.map((title: any) => (
+  <a
+    key={title.content}
+    className="contact-detail-title"
+    href={title?.url}
+  >
+    {title.content}
+  </a>
+))}
+
       </div>
     </div>
   );
