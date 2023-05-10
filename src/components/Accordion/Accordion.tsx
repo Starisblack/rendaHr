@@ -8,10 +8,11 @@ import "./Accordion.css";
 
 
 type accordionCardProps = {
-  title: string
+  title: string,
+  content: string
 }
 
-const AccordionCard:FC<accordionCardProps> = ({title}) => {
+const AccordionCard:FC<accordionCardProps> = ({title, content}) => {
   return (
     <div className="accordion">
       <Accordion>
@@ -24,9 +25,7 @@ const AccordionCard:FC<accordionCardProps> = ({title}) => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className="accordion-desc">
-            RendaHR can be used for monitoring on-site employees, remote
-            employees, WFH employees, field teams, sales teams and marketing
-            teams.
+            {content}
           </Typography>
         </AccordionDetails>
       </Accordion>
