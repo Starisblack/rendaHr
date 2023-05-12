@@ -4,6 +4,7 @@ import "./Contact.css";
 import Form from "./Form/Form";
 import { PlaceOutlined, MailOutline } from "@mui/icons-material";
 import PhoneIcon from "@mui/icons-material/Phone";
+import PageTitle from "../../components/PageTitle";
 
 
 const Contact = () => {
@@ -40,6 +41,8 @@ const Contact = () => {
 
   return (
     <div className="page contact-page">
+      <PageTitle title="Contact - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
       <Grid container gap={{xs: 4, md: 0}} spacing={{ md: 4 }} className="contact-detail-container">
         <Grid item xs={12}>
           {" "}

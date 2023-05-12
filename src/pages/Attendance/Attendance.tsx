@@ -10,6 +10,7 @@ import { GetStartedBtn } from "../../components/UI/Button/Button";
 import fingerprint from "../../assets/Attendance/fingerprint.png";
 import setting from "../../assets/Attendance/setting.png";
 import CallToAction from "../../components/CallToActions/CallToAction";
+import PageTitle from "../../components/PageTitle";
 
 const Attendance = () => {
 
@@ -36,6 +37,8 @@ const Attendance = () => {
 
   return (
     <div className="page attendance-page">
+      <PageTitle title="Attendance - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+
       <section id="time-track-container">
         <Grid container gap={{ xs: 8, md: 0 }} spacing={{ md: 2 }}>
           <DescContainer

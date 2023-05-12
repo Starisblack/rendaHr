@@ -5,6 +5,7 @@ import PServices from "./PServices/PServices";
 import PerformCTA from "./PerformCTA/PerformCTA";
 import CallToAction from "../../components/CallToActions/CallToAction";
 import { useEffect } from "react";
+import PageTitle from "../../components/PageTitle";
 
 const Performance = () => {
   useEffect(() => {
@@ -13,6 +14,8 @@ const Performance = () => {
 
   return (
     <div className="page performance-page">
+      <PageTitle title="Performance - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
       <Hero />
       <PServices />
       <section id="pm-call-actions">

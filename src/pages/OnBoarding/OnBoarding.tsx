@@ -5,6 +5,7 @@ import corehr from "../../assets/onboardIcons/corehr.png";
 import payroll from "../../assets/onboardIcons/payr.png";
 import talent from "../../assets/onboardIcons/talent.png";
 import EastIcon from "@mui/icons-material/East";
+import PageTitle from "../../components/PageTitle";
 
 
 
@@ -34,6 +35,8 @@ const OnBoardingModal = () => {
 
   return (
     <div className="page on-boarding-container">
+      <PageTitle title="OnBoarding - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
     
         <div>
           <Logo height="50px" />

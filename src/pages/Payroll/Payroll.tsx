@@ -6,6 +6,7 @@ import Hero from "../../components/Hero/Hero";
 import Services from "../../components/Services/Services";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import "./Payroll.css";
+import PageTitle from "../../components/PageTitle";
 
 const Payroll = () => {
   useEffect(() => {
@@ -13,6 +14,8 @@ const Payroll = () => {
   }, []);
   return (
     <div className="page payroll-page">
+      <PageTitle title="Payroll - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
       <Hero />
       <Services />
       <PayrollFeatures />

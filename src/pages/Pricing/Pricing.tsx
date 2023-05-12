@@ -6,6 +6,7 @@ import { Pricinginfo } from "../../components/PricingInfo/Pricinginfo";
 import PricingTable from "./PricingTable/PricingTable";
 import "./Pricing.css";
 import { useLocation } from "react-router-dom";
+import PageTitle from "../../components/PageTitle";
 
 const Pricing = () => {
   const { hash } = useLocation();
@@ -37,6 +38,8 @@ useEffect(() => {
 
   return (
     <div className="page pricing-page">
+      <PageTitle title="Pricing - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
       <div className="pricing-container">
         <Pricinginfo />
         <PricePageCTA />

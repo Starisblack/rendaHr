@@ -3,12 +3,14 @@ import Values from "../../components/Values";
 import AboutCTA from "../../components/AboutCTA";
 import Records from "../../components/Records";
 import Intro from "../../components/Intro";
+import PageTitle from "../../components/PageTitle";
 
 const About = () => {
  
 
   return (
     <div className="page about-page px-[5%] lg:px-[10%]">
+      <PageTitle title="About - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
       {/* hero section */}
       <h1 className="text-center text-[32px] md:text-[64px] text-secondary-dark font-nova">
         About us

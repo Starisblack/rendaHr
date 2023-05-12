@@ -2,6 +2,7 @@ import React from "react";
 import "./Privacy.css";
 import { useEffect } from "react";
 import { privacyData } from "./privacyData";
+import PageTitle from "../../components/PageTitle";
 
 const Privacy = () => {
   useEffect(() => {
@@ -10,6 +11,8 @@ const Privacy = () => {
 
   return (
     <div className="page pr-page">
+      <PageTitle title="Privacy Policy - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+    
         <h1 className="tc-title"> Privacy Policy for RendaHR</h1>
       <div className="tc-details-container">
         

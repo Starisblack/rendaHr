@@ -5,10 +5,13 @@ import Tabs from "../../components/Tabs";
 import HomeTestimonials from "./HomeTestimonials";
 import Join from "../../components/Join";
 import "./Home.css";
+import PageTitle from "../../components/PageTitle";
 
 const Home = () => {
   return (
     <div className="page home-page hero-bg pb-0">
+      <PageTitle title="Home - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
       <HomeHero />
       <div className="bg-white">
         <Brands />

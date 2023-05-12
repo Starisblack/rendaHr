@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import "./TermsOfService.css";
 import { termsData } from "./TermsOfServiceData";
 import parse from 'html-react-parser';
+import PageTitle from "../../components/PageTitle";
 
 const TermsOfService = () => {
   useEffect(() => {
@@ -11,6 +12,8 @@ const TermsOfService = () => {
 
     return (
     <div className="page tc-page">
+      <PageTitle title="Terms of Service - Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+      
       <h1 className="tc-title">RendaHR - Terms Of Service</h1>
       <div className="tc-details-container">
         <p style={{ marginBottom: "30px" }} className="intro-text">
